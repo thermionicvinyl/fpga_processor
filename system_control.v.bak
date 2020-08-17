@@ -1,0 +1,13 @@
+module system_control(
+	input clk,
+	output sys_clk,
+	output sys_rst
+);
+
+	PLL PLL_inst
+	(
+		areset,
+		inclk0,
+		c0,
+		locked
+	);

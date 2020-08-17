@@ -1,0 +1,6 @@
+module instruction_memory(
+	input[31:0] a;
+	output[31:0] rd;
+);
+	
+	

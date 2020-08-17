@@ -1,0 +1,39 @@
+module display_driver(
+	input clk,
+	input m_f,
+	input rst,
+	input [23:0] hex,
+	output [7:0] digit,
+	output [5:0] select
+);
+	reg [3:0] state;
+	always@(posedge clk)begin
+		if(rst)begin
+			state<=0;
+			digit<=0;
+			select<=6'b111111;
+		end
+		else begin
+			case(state)
+				0:
+				begin
+				end
+				1:
+				begin
+				end
+				2:
+				begin
+				end
+				3:
+				begin
+				end
+				4:
+				begin
+				end
+				5:
+				begin
+				end
+			endcase
+		end
+	end
+endmodule

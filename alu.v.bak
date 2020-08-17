@@ -1,0 +1,20 @@
+module alu(
+	input [2:0] alu_control,
+	input [31:0] scr_a,
+	input [31:0] scr_b,
+	output [31:0] alu_result,
+	output zero
+);
+	always@(*)begin
+		case(alu_control)
+			0:
+			1:
+			2:
+			4:
+			5:
+			6:
+			7:
+			default:
+		endcase
+	end
+endmodule

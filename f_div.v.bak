@@ -1,0 +1,13 @@
+module f_div(
+	input clk,
+	input rst,
+	input button [1:0],
+	output m_f,
+	output v_f
+);
+	reg us_counter;
+	reg ms_counter;
+	reg vf_counter;
+	
+	always@(posedge clk)begin
+		if(rst)

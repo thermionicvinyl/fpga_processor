@@ -1,0 +1,17 @@
+module output_menu(
+	input clk,
+	input rst,
+	input [1:0] button,
+	input [24:0] in0,
+	input [24:0] in1,
+	input [24:0] in2,
+	input [24:0] in3,
+	input [24:0] in4,
+	input [24:0] in5,
+	input [24:0] in6,
+	input [24:0] in7,
+	output [24:0] out
+);
+	reg [2:0] position;
+	always@(posedge clk)begin
+		if(

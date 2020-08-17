@@ -1,0 +1,17 @@
+`timescale 1ns/1ns
+module control_unit_tb();
+	reg [5:0] opcode;
+	reg [5:0] funct;
+	wire mem_to_reg;
+	wire mem_write;
+	wire branch;
+	wire [2:0] alu_control;
+	wire alu_src;
+	wire reg_dst;
+	wire reg_write;
+	control_unit inst(opcode,funct,mem_to_reg,mem_write,branch,alu_control,alu_src,reg_dst,reg_write);
+	initial begin
+		opcode = 0;
+		funct = 0;
+		#10
+		

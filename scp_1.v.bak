@@ -1,0 +1,6 @@
+module scp_1(
+	input inclk
+	input ext_reset
+);
+
+endmodule

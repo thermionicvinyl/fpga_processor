@@ -1,0 +1,14 @@
+module sign_extend_tb();
+	reg [15:0] instr;
+	wire [31:0] sign_imm;
+	sign_extend inst (instr,sign_imm);
+	initial  begin
+		hex = 0 ;
+
+		repeat (20) begin 
+		#10; 
+		hex = {$random}%20000;
+		#10;
+		end 	
+	end
+endmodule

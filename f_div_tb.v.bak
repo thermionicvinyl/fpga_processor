@@ -1,0 +1,26 @@
+`timescale 1ns/1ns
+module output_menu_tb();
+	reg clk;
+	reg rst;
+	reg [1:0] button;
+	wire m_f;
+	wire v_f;
+	f_div(
+		.clk(clk),
+		.rst(rst),
+		.button(button),
+		.m_f(m_f),
+		.v_f(v_f)
+	);
+	
+	initial begin
+		clk = 0;
+		rst = 1;
+		#15 rst = 0;
+	end
+	
+	always begin
+		#10 clk = ~clk;
+	end
+endmodule
+

@@ -1,0 +1,11 @@
+`timescale 1ns/1ns
+module display_driver_tb();
+	display_driver inst
+	(
+		.clk(),
+		.m_f(),
+		.rst(),
+		.hex(),
+		.digit(),
+		.select()
+	);

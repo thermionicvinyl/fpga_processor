@@ -1,0 +1,10 @@
+module debounce(
+	input clk,
+	input rst,
+	input m_f,
+	input button,
+	output db_button
+);
+
+	
+endmodule

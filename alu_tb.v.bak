@@ -1,0 +1,6 @@
+module alu_tb();
+	reg [2:0] alu_control;
+	reg [31:0] src_a;
+	reg [31:0] src_b;
+	wire  [31:0] alu_result;
+	wire  zero;

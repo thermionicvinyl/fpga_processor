@@ -1,0 +1,10 @@
+module scp_1_tb();
+	reg clk;
+	scp_1 inst(clk,1'b0);
+	initial begin
+		clk = 0;
+	end
+	always begin
+		#10 clk = ~clk;
+	end
+endmodule
